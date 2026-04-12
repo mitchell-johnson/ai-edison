@@ -1,0 +1,22 @@
+# LORE toolchain (auto-installed)
+lore/
+
+# LORE example apps (copied during setup, not part of this project)
+apps/edpy_test_*
+apps/logo_*
+apps/nursery_rhymes
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Compiled Edison bytecode
+*.mpy
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE (keep .vscode config, ignore personal settings)
+.vscode/*.code-workspace
