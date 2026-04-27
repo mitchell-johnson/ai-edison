@@ -22,6 +22,9 @@ Ed.Tempo = Ed.TEMPO_MEDIUM
 
 # --- Your program starts here ---
 
-# Tell the AI what you want the robot to do!
-# Example: "I want the robot to drive forward slowly"
-Ed.Drive(Ed.FORWARD, Ed.SPEED_5, 10)
+# 5 circles left, then 5 circles right
+for i in range(5):
+    Ed.Drive(Ed.SPIN_LEFT, Ed.SPEED_5, 360)
+
+for i in range(5):
+    Ed.Drive(Ed.SPIN_RIGHT, Ed.SPEED_5, 360)

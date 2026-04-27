@@ -4,7 +4,7 @@
     {
       "label": "Build Robot Program",
       "type": "shell",
-      "command": "python scripts/run.py build",
+      "command": "python3 scripts/run.py build",
       "group": "build",
       "presentation": {
         "echo": true,
@@ -18,7 +18,7 @@
     {
       "label": "Send to Robot",
       "type": "shell",
-      "command": "python scripts/run.py flash",
+      "command": "python3 scripts/run.py flash",
       "group": "build",
       "presentation": {
         "echo": true,
@@ -32,7 +32,7 @@
     {
       "label": "Build & Run",
       "type": "shell",
-      "command": "python scripts/run.py build-and-flash",
+      "command": "python3 scripts/run.py build-and-flash",
       "group": {
         "kind": "build",
         "isDefault": true
@@ -49,7 +49,7 @@
     {
       "label": "Check Robot Connection",
       "type": "shell",
-      "command": "python scripts/run.py check",
+      "command": "python3 scripts/run.py check",
       "presentation": {
         "echo": true,
         "reveal": "always",

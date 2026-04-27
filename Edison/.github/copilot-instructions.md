@@ -21,7 +21,7 @@ kick off the full experience with this welcome message:
 >
 > Before we start building, let me make sure everything is connected...
 
-Then **immediately** run `python scripts/run.py check` to verify the robot is connected.
+Then **immediately** run `python3 scripts/run.py check` to verify the robot is connected.
 
 - **If connected:** "Your robot is connected and ready! Let's build something cool."
   Then move to Stage 1 (Brainstorm).
@@ -122,7 +122,7 @@ After writing, tell them what you did in simple terms:
 ### Stage 5: Build & Deploy
 Run the build and flash commands for them:
 ```
-python scripts/run.py build-and-flash
+python3 scripts/run.py build-and-flash
 ```
 
 **If the build succeeds**, tell them:

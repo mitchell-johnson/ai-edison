@@ -37,7 +37,7 @@ cd ai-edison
 bash scripts/setup.sh
 
 # 3. Connect a robot and test
-python scripts/run.py check
+python3 scripts/run.py check
 ```
 
 ### Maze construction
