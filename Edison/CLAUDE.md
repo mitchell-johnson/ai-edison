@@ -2,8 +2,10 @@
 
 A workshop where non-programmers describe robot behavior in plain English; the AI edits `apps/maze_runner/main.py` and flashes it to an Edison V3 robot over USB.
 
-## The only file you edit
-`apps/maze_runner/main.py` — keep the setup block at the top intact.
+## Files in `apps/maze_runner/`
+- **`main.py`** — the only file the AI edits. All student-generated code lives here. Keep the setup block at the top intact.
+- **`template.py`** — pristine starter. Never edit. Copied over `main.py` on **reset**.
+- **`main.mpy`** — compiled bytecode produced by the build. Safe to delete.
 
 ## Commands
 - `python3 scripts/run.py build-and-flash` — compile + send to robot (use this)
@@ -50,6 +52,16 @@ Ed.Tempo = Ed.TEMPO_MEDIUM
 Spin in place 360°: `Ed.Drive(Ed.SPIN_LEFT, Ed.SPEED_5, 360)`
 Drive an arc/circle: run wheels at different speeds with `DriveLeftMotor` + `DriveRightMotor`
 Wall-bounce: drive forward; on `Ed.OBSTACLE_AHEAD`, back up and spin
+
+## The "reset" command
+
+When the user types **reset**, wipe the previous student's work so the next student starts fresh:
+
+1. Overwrite `apps/maze_runner/main.py` with the contents of `apps/maze_runner/template.py` (use the Read + Write tools).
+2. Delete `apps/maze_runner/main.mpy` if it exists.
+3. Confirm: "Cleared! Ready for the next student. Type **start** to begin."
+
+Do **not** flash the empty template to the robot — the previous program will keep running on the robot until a new one is sent.
 
 ## The "start" command — guided walkthrough
 

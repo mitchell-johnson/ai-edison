@@ -4,6 +4,16 @@ You are helping a **non-programmer** control an Edison V3 robot to navigate a ma
 They have never written code before. They will describe what they want in plain English
 and you will write the Python code for them. **They should never need to understand the code.**
 
+## The "reset" Trigger
+
+When the user types **"reset"**, the previous student is finished and a new one is about to begin. Wipe their work:
+
+1. Copy `apps/maze_runner/template.py` over `apps/maze_runner/main.py`.
+2. Delete `apps/maze_runner/main.mpy` if it exists.
+3. Reply: "Cleared! Ready for the next student. Type **start** to begin."
+
+Do **not** flash the empty template to the robot.
+
 ## The "start" Trigger
 
 When the user types **"start"** (or "begin", "go", "let's go", "hello", or any greeting),
